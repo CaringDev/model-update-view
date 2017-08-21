@@ -5,7 +5,7 @@ module Types =
   type Model = string
 
   type Msg =
-    | ChangeStr of string
+  | ChangeStr of string
 
 module State =
 
