@@ -38,7 +38,6 @@ module View =
                 Type "text"
                 Placeholder "Type your name"
                 DefaultValue !^model
-                AutoFocus true
                 OnChange (fun ev -> !!ev.target?value |> ChangeStr |> dispatch ) ] ]
         br [ ]
         span

@@ -33,7 +33,8 @@ let menu currentPage =
       ul
         [ ClassName "menu-list" ]
         [ menuItem "Home" Home currentPage
-          menuItem "Counter" Counter currentPage ] ]
+          menuItem "Counter" Counter currentPage
+          menuItem "Todo" Todo currentPage ] ]
 
 let root model dispatch =
 
@@ -41,6 +42,7 @@ let root model dispatch =
     function
     | Counter -> Counter.View.root model.counter (CounterMsg >> dispatch)
     | Home -> Home.View.root model.home (HomeMsg >> dispatch)
+    | Todo -> Todo.View.root model.todo (TodoMsg >> dispatch)
 
   div
     []

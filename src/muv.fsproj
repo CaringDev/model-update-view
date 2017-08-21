@@ -9,6 +9,10 @@
     <Compile Include="Counter/Types.fs" />
     <Compile Include="Counter/State.fs" />
     <Compile Include="Counter/View.fs" />
+    <!-- Todo -->
+    <Compile Include="Todo/Types.fs" />
+    <Compile Include="Todo/State.fs" />
+    <Compile Include="Todo/View.fs" />
     <!-- Home -->
     <Compile Include="Home/Home.fs" />
     <!-- Navbar -->

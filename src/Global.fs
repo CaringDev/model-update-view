@@ -3,8 +3,10 @@ module Global
 type Page =
   | Home
   | Counter
+  | Todo
 
 let toHash page =
   match page with
-  | Counter -> "#counter"
   | Home -> "#home"
+  | Counter -> "#counter"
+  | Todo -> "#todo"

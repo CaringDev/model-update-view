@@ -11,6 +11,7 @@ let pageParser: Parser<Page->Page,Page> =
   oneOf [
     map Counter (s "counter")
     map Home (s "home")
+    map Todo (s "todo")
   ]
 
 let urlUpdate (result: Option<Page>) model =
@@ -23,14 +24,17 @@ let urlUpdate (result: Option<Page>) model =
 
 let init result =
   let (counter, counterCmd) = Counter.State.init()
+  let (todo, todoCmd) = Todo.State.init()
   let (home, homeCmd) = Home.State.init()
   let (model, cmd) =
     urlUpdate result
       { currentPage = Home
         counter = counter
+        todo = todo
         home = home }
   model, Cmd.batch [ cmd
                      Cmd.map CounterMsg counterCmd
+                     Cmd.map TodoMsg todoCmd
                      Cmd.map HomeMsg homeCmd ]
 
 let update msg model =
@@ -41,3 +45,6 @@ let update msg model =
   | HomeMsg msg ->
       let (home, homeCmd) = Home.State.update msg model.home
       { model with home = home }, Cmd.map HomeMsg homeCmd
+  | TodoMsg msg ->
+    let (todo, todoCmd) = Todo.State.update msg model.todo
+    { model with todo = todo }, Cmd.map TodoMsg todoCmd
