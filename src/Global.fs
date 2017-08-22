@@ -1,12 +1,13 @@
 module Global
 
 type Page =
-  | Home
-  | Counter
-  | Todo
+| Home
+| Counter
+| Todo
+| Draw
 
-let toHash page =
-  match page with
-  | Home -> "#home"
-  | Counter -> "#counter"
-  | Todo -> "#todo"
+let toHash = function
+| Home -> "#home"
+| Counter -> "#counter"
+| Todo -> "#todo"
+| Draw -> "#draw"

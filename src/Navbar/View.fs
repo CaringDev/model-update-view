@@ -26,7 +26,7 @@ let navButtons =
             [ ClassName "field is-grouped" ]
             [ navButton "https://www.caringdev.ch" "fa-external-link-square" "CaringDev" ] ]
 
-let root =
+let render =
     nav
         [ ClassName "nav" ]
         [ div

@@ -13,6 +13,10 @@
     <Compile Include="Todo/Types.fs" />
     <Compile Include="Todo/State.fs" />
     <Compile Include="Todo/View.fs" />
+    <!-- Draw -->
+    <Compile Include="Draw/Types.fs" />
+    <Compile Include="Draw/State.fs" />
+    <Compile Include="Draw/View.fs" />
     <!-- Home -->
     <Compile Include="Home/Home.fs" />
     <!-- Navbar -->

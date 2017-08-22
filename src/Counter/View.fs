@@ -13,7 +13,7 @@ let simpleButton txt action dispatch =
           OnClick (fun _ -> action |> dispatch) ]
         [ str txt ] ]
 
-let root model dispatch =
+let render model dispatch =
   div
     [ ClassName "columns is-vcentered" ]
     [ div [ ClassName "column" ] [ ]

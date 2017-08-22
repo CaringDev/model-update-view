@@ -12,6 +12,7 @@ let pageParser: Parser<Page->Page,Page> =
     map Counter (s "counter")
     map Home (s "home")
     map Todo (s "todo")
+    map Draw (s "draw")
   ]
 
 let urlUpdate (result: Option<Page>) model =
@@ -23,28 +24,34 @@ let urlUpdate (result: Option<Page>) model =
       { model with currentPage = page }, []
 
 let init result =
+  let (home, homeCmd) = Home.State.init()
   let (counter, counterCmd) = Counter.State.init()
   let (todo, todoCmd) = Todo.State.init()
-  let (home, homeCmd) = Home.State.init()
+  let (draw, drawCmd) = Draw.State.init()
   let (model, cmd) =
     urlUpdate result
       { currentPage = Home
+        home = home
         counter = counter
         todo = todo
-        home = home }
+        draw = draw }
   model, Cmd.batch [ cmd
+                     Cmd.map HomeMsg homeCmd
                      Cmd.map CounterMsg counterCmd
                      Cmd.map TodoMsg todoCmd
-                     Cmd.map HomeMsg homeCmd ]
+                     Cmd.map DrawMsg drawCmd ]
 
 let update msg model =
   match msg with
-  | CounterMsg msg ->
-      let (counter, counterCmd) = Counter.State.update msg model.counter
-      { model with counter = counter }, Cmd.map CounterMsg counterCmd
   | HomeMsg msg ->
       let (home, homeCmd) = Home.State.update msg model.home
       { model with home = home }, Cmd.map HomeMsg homeCmd
+  | CounterMsg msg ->
+      let (counter, counterCmd) = Counter.State.update msg model.counter
+      { model with counter = counter }, Cmd.map CounterMsg counterCmd
   | TodoMsg msg ->
     let (todo, todoCmd) = Todo.State.update msg model.todo
     { model with todo = todo }, Cmd.map TodoMsg todoCmd
+  | DrawMsg msg ->
+    let (draw, drawCmd) = Draw.State.update msg model.draw
+    { model with draw = draw }, Cmd.map DrawMsg drawCmd

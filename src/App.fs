@@ -34,15 +34,17 @@ let menu currentPage =
         [ ClassName "menu-list" ]
         [ menuItem "Home" Home currentPage
           menuItem "Counter" Counter currentPage
-          menuItem "Todo" Todo currentPage ] ]
+          menuItem "Todo" Todo currentPage
+          menuItem "Draw" Draw currentPage ] ]
 
 let root model dispatch =
 
   let pageHtml =
     function
-    | Counter -> Counter.View.root model.counter (CounterMsg >> dispatch)
-    | Home -> Home.View.root model.home (HomeMsg >> dispatch)
-    | Todo -> Todo.View.root model.todo (TodoMsg >> dispatch)
+    | Home -> Home.View.render model.home (HomeMsg >> dispatch)
+    | Counter -> Counter.View.render model.counter (CounterMsg >> dispatch)
+    | Todo -> Todo.View.render model.todo (TodoMsg >> dispatch)
+    | Draw -> Draw.View.render model.draw (DrawMsg >> dispatch)
 
   div
     []
@@ -50,7 +52,7 @@ let root model dispatch =
         [ ClassName "navbar-bg" ]
         [ div
             [ ClassName "container" ]
-            [ Navbar.View.root ] ]
+            [ Navbar.View.render ] ]
       div
         [ ClassName "section" ]
         [ div

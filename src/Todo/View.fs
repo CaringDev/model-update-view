@@ -5,7 +5,7 @@ open Fable.Helpers.React
 open Fable.Helpers.React.Props
 open Types
 
-let root model dispatch =
+let render model dispatch =
   div
     [] 
     [
