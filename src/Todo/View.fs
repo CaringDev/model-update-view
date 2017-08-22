@@ -6,8 +6,10 @@ open Fable.Helpers.React.Props
 open Types
 
 let root model dispatch =
-  div [] [
-      ul [ Id "list" ] [ yield! model.Items |> Seq.map (fun i -> li [] [ str i.Text ]) ]
+  div
+    [] 
+    [
+      ul [ ] (model.items |> List.map (fun i -> li [] [ str i.text ]))
       br []
       p
         [ ClassName "control" ]
@@ -16,7 +18,6 @@ let root model dispatch =
               ClassName "input"
               Type "text"
               Placeholder "Yo, wazzup?"
-              DefaultValue !^model.Input
+              DefaultValue !^model.input
               OnChange (fun ev -> !!ev.target?value |> InputChanged |> dispatch)
-        ] ]
-  ]
+        ] ] ]

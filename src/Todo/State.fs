@@ -5,8 +5,8 @@ open System
 open Types
 
 let init () : Model * Cmd<Msg> =
-  { Input = ""; Items = [ { Id = 0; Text = "Dummy entry. Remove." } ] }, []
+  { input = ""; items = [ { id = 0; text = "Dummy entry. Remove." } ] }, []
 
 let update message model =
   match message with
-  | InputChanged s -> { model with Input = s }, []
+  | InputChanged s -> { model with input = s }, []
