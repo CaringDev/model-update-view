@@ -35,11 +35,12 @@ module View =
           [ ClassName "control" ]
           [ input
               [ ClassName "input"
-                Type "text"
-                Placeholder "Type your name"
                 DefaultValue !^model
+                Id "username"
+                Placeholder "Type your name"
+                Type "text"
                 OnChange (fun ev -> !!ev.target?value |> ChangeStr |> dispatch ) ] ]
         br [ ]
         span
-          [ ]
-          [ str (sprintf "Hello %s" model) ] ]
+          [ Id "helloMessage" ]
+          [ str (sprintf "EHLO %s" model) ] ]
