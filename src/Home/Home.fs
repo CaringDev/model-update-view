@@ -35,7 +35,7 @@ module View =
           [ ClassName "control" ]
           [ input
               [ ClassName "input"
-                DefaultValue !^model
+                DefaultValue model
                 Id "username"
                 Placeholder "Type your name"
                 Type "text"

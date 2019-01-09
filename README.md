@@ -14,9 +14,7 @@ In `src` and each sub-folder (except `Navbar`) there's a `X - TODO.md` file deta
 ## Building and running the app
 
 * Install JS dependencies: `yarn install`
-* Move to `src` folder: `cd src`
-* Install F# dependencies: `dotnet restore`
-* Start Fable daemon and [Webpack](https://webpack.js.org/) dev server: `dotnet fable yarn-start`
+* Start Fable daemon and [Webpack](https://webpack.js.org/) dev server: `yarn start`
 * In your browser, open: http://localhost:8080/
 
 Any modification you do to the F# code will be reflected in the web page after saving. Watch the console for error messages.

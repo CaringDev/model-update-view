@@ -7,5 +7,3 @@ nuget Fable.Elmish.React
 nuget Fable.Elmish.Browser
 nuget Fable.Elmish.Debugger
 nuget FSharp.NET.Sdk
-
-clitool dotnet-fable
