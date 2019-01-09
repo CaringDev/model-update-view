@@ -9,8 +9,8 @@ open Types
 let drawRect r =
     rect
         [
-            !^r.x |> X :> IProp
-            !^r.y |> Y :> IProp
+            X r.x :> IProp
+            Y r.y :> IProp
             Style [ CSSProp.Width r.width; Height r.height ] :> IProp
             SVGAttr.Fill "red" :> IProp
         ]

@@ -18,6 +18,6 @@ let render model dispatch =
               ClassName "input"
               Type "text"
               Placeholder "Yo, wazzup?"
-              DefaultValue !^model.input
+              DefaultValue model.input
               OnChange (fun ev -> !!ev.target?value |> InputChanged |> dispatch)
         ] ] ]

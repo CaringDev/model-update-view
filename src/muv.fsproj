@@ -1,27 +1,20 @@
-<Project Sdk="FSharp.NET.Sdk;Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard1.6</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <!-- Global to the app -->
     <Compile Include="Global.fs" />
-    <!-- Counter -->
     <Compile Include="Counter/Types.fs" />
     <Compile Include="Counter/State.fs" />
     <Compile Include="Counter/View.fs" />
-    <!-- Todo -->
     <Compile Include="Todo/Types.fs" />
     <Compile Include="Todo/State.fs" />
     <Compile Include="Todo/View.fs" />
-    <!-- Draw -->
     <Compile Include="Draw/Types.fs" />
     <Compile Include="Draw/State.fs" />
     <Compile Include="Draw/View.fs" />
-    <!-- Home -->
     <Compile Include="Home/Home.fs" />
-    <!-- Navbar -->
     <Compile Include="Navbar/View.fs" />
-    <!-- App -->
     <Compile Include="Types.fs" />
     <Compile Include="State.fs" />
     <Compile Include="App.fs" />
