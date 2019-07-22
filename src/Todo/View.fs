@@ -7,7 +7,7 @@ open Types
 
 let render model dispatch =
   div
-    [] 
+    []
     [
       ul [ ] (model.items |> List.map (fun i -> li [] [ str i.text ]))
       br []
