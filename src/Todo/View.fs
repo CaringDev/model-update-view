@@ -1,8 +1,8 @@
 module Todo.View
 
 open Fable.Core.JsInterop
-open Fable.Helpers.React
-open Fable.Helpers.React.Props
+open Fable.React
+open Fable.React.Props
 open Types
 
 let render model dispatch =

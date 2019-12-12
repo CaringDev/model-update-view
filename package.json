@@ -10,25 +10,24 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "babel-runtime": "^6.26.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "remotedev": "^0.2.9"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
-    "babel-loader": "^8.0.5",
-    "bulma": "^0.7.2",
-    "css-loader": "^2.1.0",
-    "fable-compiler": "^2.1.9",
-    "fable-loader": "^2.1.2",
-    "loglevel": "^1.6.1",
-    "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.21.1",
-    "webpack-cli": "^3.2.1",
-    "webpack-dev-server": "^3.1.14"
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "babel-loader": "^8.0.6",
+    "bulma": "^0.8.0",
+    "css-loader": "^3.3.2",
+    "fable-compiler": "^2.4.11",
+    "fable-loader": "^2.1.8",
+    "loglevel": "^1.6.6",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
   }
 }

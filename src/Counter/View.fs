@@ -1,8 +1,7 @@
 module Counter.View
 
-open Fable.Core
-open Fable.Helpers.React
-open Fable.Helpers.React.Props
+open Fable.React
+open Fable.React.Props
 open Types
 
 let simpleButton txt action dispatch =
@@ -20,7 +19,7 @@ let render model dispatch =
       div
         [ ClassName "column is-narrow"
           Style
-            [ CSSProp.Width "170px" ] ]
+            [ Width "170px" ] ]
         [ str (sprintf "Counter value: %i" model) ]
       simpleButton "+1" Increment dispatch
       simpleButton "-1" Decrement dispatch

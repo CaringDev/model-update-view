@@ -1,9 +1,9 @@
 module Draw.View
 
-open Fable.Core
+open Browser.Types
 open Fable.Core.JsInterop
-open Fable.Helpers.React
-open Fable.Helpers.React.Props
+open Fable.React
+open Fable.React.Props
 open Types
 
 let drawRect r =
@@ -11,20 +11,20 @@ let drawRect r =
         [
             X r.x :> IProp
             Y r.y :> IProp
-            Style [ CSSProp.Width r.width; Height r.height ] :> IProp
+            Style [ Width r.width; Height r.height ] :> IProp
             SVGAttr.Fill "red" :> IProp
         ]
         []
 
 let render { elements = elements } dispatch =
-  let relativeCoordinates (e : Fable.Import.React.MouseEvent) =
+  let relativeCoordinates (e : MouseEvent) =
     let rect = e.target?getBoundingClientRect()
     { x = e.clientX - !!rect?left; y = e.clientY - !!rect?top }
   div
     [ OnMouseDown (relativeCoordinates >> Adding >> dispatch)
-      Style [ CSSProp.Width "800px"; Height "600px"; Border "solid 1px" ] ]
+      Style [ Width "800px"; Height "600px"; Border "solid 1px" ] ]
     [ svg
-        [ SVGAttr.PreserveAspectRatio "none" :> IProp
+        [ PreserveAspectRatio "none" :> IProp
           Style
-            [ CSSProp.Width "100%"; Height "100%"; ] :> IProp ]
+            [ Width "100%"; Height "100%"; ] :> IProp ]
         (elements |> List.map drawRect) ]

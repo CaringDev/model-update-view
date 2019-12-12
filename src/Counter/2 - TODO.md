@@ -1,6 +1,7 @@
 # Counter
 
 ## Reset functionality
+
 We want to introduce the possibility the reset the counter to 0...
 
 - [ ] Extend the model to allow `Reset` messages
