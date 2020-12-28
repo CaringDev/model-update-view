@@ -2,7 +2,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "dev-server",
+            "label": "start",
             "problemMatcher": ["$msCompile", "$fable-webpack"],
             "type": "shell",
             "command": "dotnet",
