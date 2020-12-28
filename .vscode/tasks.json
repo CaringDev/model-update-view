@@ -1,0 +1,12 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "dev-server",
+            "problemMatcher": ["$msCompile", "$fable-webpack"],
+            "type": "shell",
+            "command": "dotnet",
+            "args": ["fable", "watch", "src", "--run", "npm start"]
+        }
+    ]
+}
