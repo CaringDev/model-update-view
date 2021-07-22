@@ -4,36 +4,36 @@ open Fable.React
 open Fable.React.Props
 
 let navButton href faClass txt =
-    p
-        [ ClassName "control" ]
-        [ a
-            [ ClassName "button"
-              Href href
-              Target "_blank" ]
-            [ span
-                [ ClassName "icon" ]
-                [ i
-                    [ ClassName (sprintf "fa %s" faClass) ]
-                    [ ] ]
-              span
-                [ ]
-                [ str txt ] ] ]
+    a
+        [ ClassName "button"
+          Href href
+          Target "_blank" ]
+        [ span
+            [ ClassName "icon" ]
+            [ i
+                [ ClassName (sprintf "fa %s" faClass) ]
+                [ ] ]
+          span
+            [ ]
+            [ str txt ] ]
 
 let navButtons =
-    span
-        [ ClassName "nav-item" ]
+    div
+        [ ClassName "navbar-item" ]
         [ div
-            [ ClassName "field is-grouped" ]
+            [ ClassName "buttons" ]
             [ navButton "https://www.caringdev.ch" "fa-external-link-square" "CaringDev" ] ]
 
 let render =
     nav
-        [ ClassName "nav" ]
+        [ ClassName "navbar" ]
         [ div
-            [ ClassName "nav-left" ]
+            [ ClassName "navbar-brand" ]
             [ h1
-                [ ClassName "nav-item is-brand title is-4" ]
+                [ ClassName "navbar-item title" ]
                 [ str "MUV" ] ]
           div
-            [ ClassName "nav-right" ]
-            [ navButtons ] ]
+            [ ClassName "navbar-menu" ]
+            [ div
+                [ ClassName "navbar-end" ]
+                [ navButtons ] ] ]
