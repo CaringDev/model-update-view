@@ -22,7 +22,7 @@ let navButtons =
         [ ClassName "navbar-item" ]
         [ div
             [ ClassName "buttons" ]
-            [ navButton "https://www.caringdev.ch" "fa-external-link-square" "CaringDev" ] ]
+            [ navButton "https://www.caring.dev" "fa-external-link-square" "CaringDev" ] ]
 
 let render =
     nav
