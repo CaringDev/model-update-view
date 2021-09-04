@@ -26,9 +26,6 @@
         "webpack-dev-server": "^4.1.0"
     },
     "resolutions": {
-        "browserslist": "^4.16.5",
-        "dns-packet": "^1.3.2",
-        "hosted-git-info": "^4.0.1",
-        "ws": "^7.4.6"
+        "remotedev/socketcluster-client/ws": "^5.2.3"
     }
 }
