@@ -1,7 +1,8 @@
 source https://api.nuget.org/v3/index.json
 framework: auto-detect
+storage: none
 
 nuget Fable.Elmish.React
 nuget Fable.Elmish.Browser
 nuget Fable.Elmish.Debugger
-nuget FSharp.NET.Sdk
+nuget Fable.React

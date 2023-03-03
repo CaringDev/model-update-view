@@ -1,7 +1,7 @@
 /public/bundle.js*
 /src/**/*.fs.js
 
+/.idea/
 /.ionide/
 /node_modules/
-/packages/
 obj/

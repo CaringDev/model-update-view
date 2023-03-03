@@ -11,7 +11,7 @@ let navButton href faClass txt =
         [ span
             [ ClassName "icon" ]
             [ i
-                [ ClassName (sprintf "fa %s" faClass) ]
+                [ ClassName $"fa %s{faClass}" ]
                 [ ] ]
           span
             [ ]

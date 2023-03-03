@@ -42,4 +42,4 @@ module View =
         br [ ]
         span
           [ Id "helloMessage" ]
-          [ str (sprintf "EHLO %s" model) ] ]
+          [ str $"EHLO %s{model}" ] ]

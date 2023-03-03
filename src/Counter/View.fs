@@ -20,7 +20,7 @@ let render model dispatch =
         [ ClassName "column is-narrow"
           Style
             [ Width "170px" ] ]
-        [ str (sprintf "Counter value: %i" model) ]
+        [ str $"Counter value: %i{model}" ]
       simpleButton "+1" Increment dispatch
       simpleButton "-1" Decrement dispatch
       div [ ClassName "column" ] [ ] ]
