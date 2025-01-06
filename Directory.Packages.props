@@ -1,0 +1,14 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+    <CentralPackageVersionOverrideEnabled>false</CentralPackageVersionOverrideEnabled>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="Fable.Elmish.Browser" Version="4.0.3" />
+    <PackageVersion Include="Fable.Elmish.Debugger" Version="4.1" />
+    <PackageVersion Include="Fable.Elmish.React" Version="4.0.0" />
+    <PackageVersion Include="Fable.React" Version="9.4" />
+    <PackageVersion Include="FSharp.Core" Version="9.0.100" />
+  </ItemGroup>
+</Project>
