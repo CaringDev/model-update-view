@@ -9,6 +9,6 @@
     <PackageVersion Include="Fable.Elmish.Debugger" Version="4.1" />
     <PackageVersion Include="Fable.Elmish.React" Version="4.0.0" />
     <PackageVersion Include="Fable.React" Version="9.4" />
-    <PackageVersion Include="FSharp.Core" Version="9.0.100" />
+    <PackageVersion Include="FSharp.Core" Version="9.0.201" />
   </ItemGroup>
 </Project>
