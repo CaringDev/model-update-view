@@ -49,9 +49,9 @@
       },
       "FSharp.Core": {
         "type": "Direct",
-        "requested": "[9.0.202, )",
-        "resolved": "9.0.202",
-        "contentHash": "p8iGT2PeRL9q0ZIQ3ZhmRMRs4+b5Xaf9SSYKOt/+tDtznMQhHovYWaD1491RvBz8rnxcesAISbrkrjI1/4TUtw=="
+        "requested": "[9.0.300, )",
+        "resolved": "9.0.300",
+        "contentHash": "2ZDoF/N7WPidmaflrTnPucUJfaV5XkIHCh4h77yET7ihuv2dR2ksSsIiiDd34Z9YmwyYEQocpDl1r6RXFr0DMg=="
       },
       "Fable.Browser.Blob": {
         "type": "Transitive",
