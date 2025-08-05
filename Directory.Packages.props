@@ -7,7 +7,7 @@
   <ItemGroup>
     <PackageVersion Include="Fable.Elmish.Browser" Version="4.1.0" />
     <PackageVersion Include="Fable.Elmish.Debugger" Version="4.2.2" />
-    <PackageVersion Include="Fable.Elmish.React" Version="5.0.0" />
+    <PackageVersion Include="Fable.Elmish.React" Version="4.0.0" />
     <PackageVersion Include="Fable.React" Version="9.4.0" />
     <PackageVersion Include="FSharp.Core" Version="9.0.303" />
   </ItemGroup>
