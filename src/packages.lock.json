@@ -27,7 +27,7 @@
       },
       "Fable.Elmish.React": {
         "type": "Direct",
-        "requested": "[4.0.0, )",
+        "requested": "[4.0.0, 5.0.0)",
         "resolved": "4.0.0",
         "contentHash": "cMuWet7DhxgN2G1caYLwjLvoMkH1u75U36cUyL07yxNt/dmGp8GD/+RTtL9wpkfeThfeJHHouCkR708mJcMRpA==",
         "dependencies": {

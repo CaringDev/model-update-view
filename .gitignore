@@ -3,6 +3,7 @@
 
 /.idea/
 /.ionide/
+/.vs/
 /node_modules/
 bin/
 obj/
