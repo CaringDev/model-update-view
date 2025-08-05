@@ -6,7 +6,7 @@
             "problemMatcher": ["$msCompile", "$fable-webpack"],
             "type": "shell",
             "command": "dotnet",
-            "args": ["fable", "watch", "src", "--run", "npm start"]
+            "args": ["fable", "watch", "src", "--run", "yarn run start"]
         }
     ]
 }

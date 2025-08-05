@@ -15,7 +15,7 @@ In `src` and each sub-folder (except `Navbar`) there's a `X - TODO.md` file deta
 
 * Install JS dependencies: `yarn install`
 * Restore required tools: `dotnet tool restore`
-* Start `dotnet fable watch src --run npm start` (or run `start` task in VS Code)
+* Start `dotnet fable watch src --run yarn run start` (or run `start` task in VS Code)
 * Open [your browser](http://localhost:8080/)
 
 Any modification you do to the F# code will be reflected in the web page after saving. Watch the console for error messages.
